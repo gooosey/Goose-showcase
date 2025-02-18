@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Nav bar */
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px; 
+    color: black;
+}
+
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 7rem;
+}
+
+/* Active what page on */
+
+.nav-links ul li a.active {
+    text-decoration: underline;
+    color: black;
+    font-weight: 700;
+    font-size: 1.2em;
+
+}
+
+/* Header section */
+header {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f4dac6;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content {
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 7vmin;
+    margin-bottom: 30px;
+}
+
+.header-content h2 {
+    font-size: 3vmin;
+    margin-bottom: 15px;
+}
+.line {
+    width: 150px;
+    height: 5px;
+    background-color: aliceblue;
+    margin: 10px auto;
+}
+
+.ctn {
+    padding: 10px 16px;
+    border-radius: 30px;
+    background-color: aliceblue;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}

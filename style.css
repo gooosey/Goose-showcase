@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Atkinson Hyperlegible Next', sans-serif;
 }
 /* Nav bar */
 
@@ -87,6 +88,57 @@ a {
     text-decoration: none;
 }
 
+/* Section Goose */
+
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title {
+    font-size: 3vmin;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.goosecontainer {
+    border-radius: 30px;
+    overflow: hidden;
+}
+.goosedostuff h4  {
+    font-size: 32px;
+    margin: 4px;
+}
+
+.goosedostuff p {
+    margin-bottom: 22px;
+    font: 18px;
+}
+
+.goosedostuff{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.quack-ctn {
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: aliceblue;
+    border: 2px black solid;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+/* Mobile users */
+
 .menu-btn {
     position: absolute;
     top: 30px;
@@ -96,10 +148,16 @@ a {
     display: none;
 }
 
-
-/* Mobile users */
 @media only screen and (max-width: 850px) {
+    /* Goose img */
+    .goosecontainer img {
+        width: 100%; 
+        height: auto; 
+        max-width: 100%;
+        display: block; 
+    }
 
+    /* Nav */
     .menu-btn {
         position: absolute;
         top: 30px;

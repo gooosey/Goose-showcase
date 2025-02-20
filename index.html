@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gooseweb2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Neucha&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,13 +34,47 @@
             <a href="#" class="ctn">Learn more</a>
         </div>
     </header>
+    
+    <!-- Section Events -->
+
+    <section>
+        <div class="title">
+            <h1>What does the goose do?</h1>
+            <div class="line"></div>
+        </div>
+        <div class="goosecontainer">
+            <div class="gooseimg">
+                <img src="/photo/quack.svg" alt="A goose quacking">
+            </div>
+        </div>
+            <div class="goosedostuff">
+                <h4>Goose!!</h4>
+                <p>The goose is quacking... quack quack quack</p>
+                <a href="#" class="quack-ctn" id="playsound">Bonk It</a>
+                <audio id="soundeffect">
+                    <source src="Audio/Goose.....mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+    </section>
+
     <script>
-        const menuBtn = document.querySelector(".menu-btn")
-        const navlinks = document.querySelector(".nav-links")
+        const menuBtn = document.querySelector(".menu-btn");
+        const navlinks = document.querySelector(".nav-links");
 
         menuBtn.addEventListener('click', () => {
-            navlinks.classList.toggle('mobile-menu')
-        })
+            navlinks.classList.toggle('mobile-menu');
+        });
+
+        document.getElementById("playsound").addEventListener("click", function() {
+            event.preventDefault();
+            var sound = document.getElementById("soundeffect");
+            if (sound) {
+                sound.play();
+            } else {
+                console.error("Audio element not found!");
+            }
+        });
     </script>
 </body>
 </html>

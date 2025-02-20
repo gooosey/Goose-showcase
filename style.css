@@ -87,9 +87,27 @@ a {
     text-decoration: none;
 }
 
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
 
 /* Mobile users */
 @media only screen and (max-width: 850px) {
+
+    .menu-btn {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 40px;
+        cursor: pointer;
+        display: block;
+    }
     .navbar {
         padding: 0;
     }
@@ -105,11 +123,14 @@ a {
         justify-content: center;
         align-items: center;
         background-color: aliceblue;
-        
+        transform: translateY(-100%);
+        transition: all 0.5s ease-in;
+    }
+    .mobile-menu {
+        transform: translateY(0%);
     }
     .nav-links ul {
         flex-direction: column;
-        margin: 30px auto;
     }
     .ctn {
         border: 2px solid black;

@@ -19,6 +19,7 @@
                 <li class="ctn"><a href="#">Find Goose</a></li>
             </ul>
         </div>
+        <img src="./photo/menu.svg" alt="A menu button" class="menu-btn">
     </nav>
     <!-- Header -->
     <header>
@@ -29,5 +30,13 @@
             <a href="#" class="ctn">Learn more</a>
         </div>
     </header>
+    <script>
+        const menuBtn = document.querySelector(".menu-btn")
+        const navlinks = document.querySelector(".nav-links")
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
 </body>
 </html>

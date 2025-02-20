@@ -70,6 +70,9 @@ header {
     font-size: 3vmin;
     margin-bottom: 15px;
 }
+.logo {
+    font-size: 3rem;
+}
 .line {
     width: 150px;
     height: 5px;
@@ -86,6 +89,20 @@ header {
 
 a {
     text-decoration: none;
+}
+
+/* Goose */
+.goose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: auto;
+}
+
+.goose img {
+    height: auto;
+    width: auto;
 }
 
 /* Section Goose */
@@ -162,7 +179,7 @@ section {
 
     .goosecontainer img {
         width: 100%; 
-        height: auto; 
+        height: auto;   
     }
 
     .goosedostuff {
@@ -195,6 +212,7 @@ section {
     .navbar {
         padding: 0;
     }
+
     .logo {
         position: absolute;
         top: 30px;

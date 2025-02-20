@@ -104,6 +104,7 @@ section {
 .goosecontainer {
     border-radius: 30px;
     overflow: hidden;
+    flex-wrap: wrap;
 }
 .goosedostuff h4  {
     font-size: 32px;
@@ -112,7 +113,7 @@ section {
 
 .goosedostuff p {
     margin-bottom: 22px;
-    font: 18px;
+    font-size: 18px;
 }
 
 .goosedostuff{
@@ -120,6 +121,7 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 
@@ -148,7 +150,32 @@ section {
     display: none;
 }
 
-@media only screen and (max-width: 850px) {
+@media (min-width: 1200px) {
+    .goosecontainer {
+        display: flex;
+        justify-content: flex-start;  /* Align items to the left */
+        align-items: flex-start;  /* Align items to the top */
+        flex-direction: row;  /* Ensure items (image and text) are side by side */
+    }
+
+    .goosecontainer img {
+        width: 50%;
+        height: auto;
+        max-width: 50%;
+    }
+
+    .goosedostuff {
+        display: flex;
+        align-items: flex-start;  /* Align text to the top */
+        justify-content: flex-start;  /* Keep text to the left of the container */
+        flex-direction: column;  /* Keep text stacked vertically */
+        flex-grow: 1;
+        margin-top: 0;  /* You can adjust this if necessary */
+    }
+}
+
+
+@media (max-width: 800px) {
     /* Goose img */
     .goosecontainer img {
         width: 100%; 

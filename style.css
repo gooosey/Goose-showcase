@@ -155,6 +155,92 @@ section {
 }
 
 
+/* Section Goofy goose */
+.dabble {
+    font-size: 2.8vmin;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.dabble-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.dabble-container img{
+    max-width: 100%;
+    border-radius: 30px;
+    height: auto;
+
+}
+
+
+/* Footer */
+
+footer {
+    background: #2d2c2b;
+    color: white;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.9rem;
+    font-weight: 450;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p {
+    font-size: 1rem;
+    max-width: 500px;
+    margin-top: 10px;
+    line-height: 28px;
+}
+.social {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    gap: 4rem;
+}
+.social li {
+    margin: 0 10px;
+}
+.social a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+.social a i{
+    font-size: 2rem;
+}
+.social a:hover i{
+    transition: all 0.5s ease-in;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 1.2rem;
+}
+
+
 /* Mobile users */
 
 .menu-btn {
@@ -172,6 +258,15 @@ section {
         align-items: center; 
     }
 
+    .dabble-container {
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    .dabble-container img {
+        width: 100%;
+        height: auto;
+    }
     .goosecontainer {
         width: 50%; 
         margin-right: 20px; 
@@ -198,6 +293,14 @@ section {
         height: auto; 
         max-width: 100%;
         display: block; 
+    }
+
+    /* Goofy Goose */
+    .dabble-container img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        display: block;
     }
 
     /* Nav */
